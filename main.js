@@ -26,4 +26,34 @@ let jon = 'Jon'
 
 console.log(reverseString2(jon))
 
+reverseString3 = (str) => {
+	let newStr = ''
+	for (let i = 0; i < str.length; i++) {
+		newStr = str[i] + newStr
+	}
+	return newStr
+}
 
+let karma = 'Karma'
+console.log(reverseString3(karma))
+
+reverseString4 = (str) => {
+	let revStr = ''
+	for (let x of str) {
+		revStr = x + revStr
+	}
+	return revStr
+}
+
+let marley = 'Marley'
+console.log(reverseString4(marley))
+
+reverseString5 = (str) => {
+	let revStr = ''
+	str.split('').forEach(char => {
+		revStr = char + revStr
+	})
+	return revStr
+}
+let boomer = 'Boomer'
+console.log(reverseString5(boomer))
